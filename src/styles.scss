@@ -1,0 +1,67 @@
+$blue: #3366ff;
+$orange: #ffcc33;
+$whiteSmoke: #ebebeb;
+$white: #ffffff;
+
+$break-small: 480px;
+$break-mid: 800px;
+$break-large: 1200px;
+
+$mainBgColor: $blue;
+$logoColor: $orange;
+
+@font-face {
+  font-family: verdana;
+  src: url(assets/fonts/verdana.ttf);
+}
+
+* {
+  font-family: "verdana";
+}
+
+body {
+  background: $whiteSmoke;
+}
+
+.bg-main {
+  background: $mainBgColor;
+}
+
+.logo {
+  color: $logoColor;
+  :hover {
+    color: $logoColor;
+  }
+}
+
+.product {
+  width: 20%;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 1rem 0;
+  @media screen and (max-width: $break-small) {
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 0;
+  }
+  /* @media screen and (max-width: $break-mid) {
+    width: 33%;
+    border: none;
+    margin: 0 0 1rem 0;
+    padding: 10px;
+  } */
+}
+
+.ng5-slider {
+  .ng5-slider-pointer {
+    background-color: $white !important;
+    width: 15px !important;
+    height: 15px !important;
+    top: -6px !important;
+    border-radius: 50% !important;
+    border: 2px solid #ccc !important;
+  }
+  :after {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+$whiteSmoke: #ebebeb;
+
+.add-more-icon {
+  border: 2px solid $whiteSmoke;
+  padding: 2px 8px;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  :focus {
+    outline: none;
+  }
+}
